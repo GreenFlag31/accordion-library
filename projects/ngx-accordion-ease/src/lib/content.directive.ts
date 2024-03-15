@@ -2,7 +2,6 @@ import {
   Directive,
   ElementRef,
   HostBinding,
-  AfterViewInit,
   Input,
   AfterContentInit,
 } from '@angular/core';
@@ -12,7 +11,7 @@ import {
   standalone: true,
   host: { class: 'ngx-accordion-content' },
 })
-export class AccordionContent implements AfterContentInit, AfterViewInit {
+export class AccordionContent implements AfterContentInit {
   @Input() transitionTiming = '0.3s ease-out';
   open = false;
 
@@ -42,9 +41,8 @@ export class AccordionContent implements AfterContentInit, AfterViewInit {
 
   /**
    * Wrap the content inside a container to allow animation on grid on a single element (0 => 1fr)
-   * to place inside aftercontentinit?
    */
-  ngAfterContentInit(): void {
+  ngAfterContentInit() {
     const children = Array.from(this.native.childNodes);
     const parentWrapper = document.createElement('div');
     parentWrapper.classList.add('content-wrapper');
@@ -55,8 +53,6 @@ export class AccordionContent implements AfterContentInit, AfterViewInit {
 
     this.native.append(parentWrapper);
   }
-
-  ngAfterViewInit() {}
 
   @HostBinding('class.open')
   get opened() {

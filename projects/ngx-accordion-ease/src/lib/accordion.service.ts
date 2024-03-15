@@ -24,7 +24,7 @@ export class AccordionService {
   }
 
   /**
-   * Toggle an accordion. If activeIndex is not defined, all tabs will be toggled.
+   * Toggle tab(s) in an accordion. If activeIndex is not defined, all tabs will be toggled.
    * @param option
    * ```
    * accordion: ElementRef<HTMLElement>;

@@ -2,11 +2,25 @@
   "name": "ngx-accordion-ease",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^17.2.0",
-    "@angular/core": "^17.2.0"
+    "@angular/common": "^17.0.0",
+    "@angular/core": "^17.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "exports": {
+    "./css": "./src/lib/accordion.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GreenFlag31/accordion-library"
+  },
+  "keywords": [
+    "Angular",
+    "Accordion",
+    "Menu",
+    "List",
+    "Panel"
+  ],
   "sideEffects": false
 }

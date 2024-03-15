@@ -60,7 +60,7 @@ This library exposes a `AccordionService` containing the following API:
 
 ````javascript
   /**
-   * Toggle an accordion. If activeIndex is not defined, all tabs will be toggled.
+   * Toggle tab(s) in an accordion. If activeIndex is not defined, all tabs will be toggled.
    * @param option
    * ```
    * accordion: ElementRef<HTMLElement>;   // Provide a @ViewChild elementRef
@@ -136,7 +136,7 @@ This library exposes a `AccordionService` containing the following API:
 
 Since multiple accordions on a page are possible, an `ViewChild() elementRef` has to be provided as first argument in the exposed methods. This library has been documented and should provide autocomplete and help from your code editor.
 
-Following example toggles a tab:
+Following example toggles a tab in the specified accordion:
 
 ```javascript
 this.accordionService.toggle({

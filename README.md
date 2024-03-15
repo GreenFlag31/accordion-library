@@ -21,7 +21,7 @@ npm i ngx-accordion-ease
 Import the stylesheet in your `styles.css`:
 `@import "../node_modules/ngx-accordion-ease/src/lib/accordion.css";`
 
-Add the `accordionModule` to your module or standalone component.
+Add the `AccordionModule` to your module or standalone component.
 
 # Usage
 
@@ -30,12 +30,14 @@ This library consists in a set of directives to apply in the template containing
 ```html
 <div ngxAccordion #presentation>
   <label ngxAccordionLabel>
+    <!-- Your label and icon -->
     <h4 class="label">General</h4>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" ngxAccordionIcon>
       <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
     </svg>
   </label>
   <div ngxAccordionContent>
+    <!-- The content of your accordion -->
     <h5 class="title">General</h5>
     <div class="content">
       <p>This library offers a lightweight, easy to implement, and performant accordion. Implement an accordion in your application in no time!</p>

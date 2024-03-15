@@ -1,0 +1,95 @@
+.accordion-container {
+  background: rgb(242 242 242);
+  min-height: 100vh;
+}
+.accordion-container h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: "Allura";
+  font-size: 3rem;
+}
+header button.add-star {
+  margin-top: 1rem;
+  border: none;
+  color: #fff;
+  background: #000;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.bg-container {
+  padding: 1rem;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.add-star a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+}
+.add-star svg {
+  fill: gold;
+  height: 16px;
+  width: 16px;
+}
+.presentation {
+  text-align: justify;
+}
+.presentation {
+  margin-top: 5rem;
+}
+.ngx-accordion-ease {
+  background: #fff;
+}
+.ngx-accordion-ease .label {
+  font-weight: normal;
+}
+.ngx-accordion-ease .title {
+  padding: 0.5rem 0;
+  color: #3874a8;
+  font-size: 1.8rem;
+  font-family: "Allura";
+  font-weight: normal;
+}
+.ngx-accordion-ease p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+label {
+  background: linear-gradient(to right, #e00079, #0000ab);
+  color: #fff;
+  border-bottom: 1px solid #b5b5b5;
+}
+.accordion-svg {
+  width: 15px;
+  height: 15px;
+  fill: white;
+}
+.toggle-service {
+  margin-top: 5rem;
+}
+.toggle-service h5 {
+  font-size: 1.8rem;
+  font-family: "Allura";
+}
+.toggle-service button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.toggle-service p {
+  margin-bottom: 1rem;
+}
+.author a {
+  background-image: linear-gradient(to right, #fa00ff, #0000ab);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.author {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  padding: 1rem;
+}

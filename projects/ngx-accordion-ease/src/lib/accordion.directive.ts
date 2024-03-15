@@ -43,8 +43,6 @@ export class Accordion implements OnInit, AfterContentInit {
   }
 
   activateDefaultLabels() {
-    this.closeAllSingleSelection();
-
     for (let i = 0; i < this.labels.length; i++) {
       const [label, content] = this.getLabelAndContent(i);
 
@@ -147,7 +145,7 @@ export class Accordion implements OnInit, AfterContentInit {
   }
 
   /**
-   * openAll is not enabled in case of single selection
+   * openAll not enabled in case of single selection
    */
   openCloseAll(open: boolean, animation: boolean) {
     if (this.selection === 'single' && open) return;

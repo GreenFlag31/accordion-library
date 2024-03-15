@@ -134,7 +134,17 @@ This library exposes a `AccordionService` containing the following API:
   onOpenAll = new Subject<StateAll>();
 ````
 
-Since multiple accordions on a page are possible, an `ViewChild() elementRef` as to be provided as first argument. This library has been documented and should provide autocomplete and help from your code editor.
+Since multiple accordions on a page are possible, an `ViewChild() elementRef` as to be provided as first argument in the exposed methods. This library has been documented and should provide autocomplete and help from your code editor.
+
+Example:
+
+´´´javascript
+this.accordionService.toggle({
+accordion: this.presentation,
+activeIndex: [3],
+animation: true,
+});
+´´´
 
 # Change log
 

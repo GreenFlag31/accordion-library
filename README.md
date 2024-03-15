@@ -64,7 +64,7 @@ This library exposes a `AccordionService` containing the following API:
    * @param option
    * ```
    * accordion: ElementRef<HTMLElement>;   // Provide a @ViewChild elementRef
-   * activeIndex?: number[];               // An array of indexes to toggle
+   * activeIndex?: number[];               // An array of indexes to toggle (zero indexed)
    * animation: boolean;                   // Enable animation
    * ```
    */
@@ -134,14 +134,17 @@ This library exposes a `AccordionService` containing the following API:
   onOpenAll = new Subject<StateAll>();
 ````
 
-Since multiple accordions on a page are possible, an `ViewChild() elementRef` as to be provided as first argument in the exposed methods. This library has been documented and should provide autocomplete and help from your code editor.
+Since multiple accordions on a page are possible, an `ViewChild() elementRef` has to be provided as first argument in the exposed methods. This library has been documented and should provide autocomplete and help from your code editor.
 
-Example:
+Following example toggles a tab:
 
 ```javascript
 this.accordionService.toggle({
+  // ViewChild() elementRef attached to the template
   accordion: this.presentation,
+  // The fourth item will be toggled
   activeIndex: [3],
+  // Animation enabled
   animation: true,
 });
 ```

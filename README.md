@@ -138,13 +138,13 @@ Since multiple accordions on a page are possible, an `ViewChild() elementRef` as
 
 Example:
 
-´´´javascript
+```javascript
 this.accordionService.toggle({
-accordion: this.presentation,
-activeIndex: [3],
-animation: true,
+  accordion: this.presentation,
+  activeIndex: [3],
+  animation: true,
 });
-´´´
+```
 
 # Change log
 
